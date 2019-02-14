@@ -2,6 +2,6 @@
 Everything that goes inside of omnidb-app.tar.gz on Slackbuilds.
 So, Everything needed to install Omnidb-app on Slackware.
 
-Current installation version: 2.13.0
+Current installation version: 2.14.0
 
 Link on SlackBuilds.org: https://slackbuilds.org/repository/14.2/system/omnidb-app/
