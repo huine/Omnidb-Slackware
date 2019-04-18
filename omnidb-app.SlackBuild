@@ -27,7 +27,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=omnidb-app
-VERSION=${VERSION:-2.14.0}
+VERSION=${VERSION:-2.15.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -44,10 +44,11 @@ TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-if [ "$ARCH" = "i586" ] || [ "$ARCH" = "i686" ]; then
-  DEBARCH="i386"
-  LIBDIRSUFFIX=""
-elif [ "$ARCH" = "x86_64" ]; then
+# Doesn't support 32bit anymore.
+# if [ "$ARCH" = "i586" ] || [ "$ARCH" = "i686" ]; then
+#   DEBARCH="i386"
+#   LIBDIRSUFFIX=""
+if [ "$ARCH" = "x86_64" ]; then
   DEBARCH="amd64"
   LIBDIRSUFFIX="64"
 else
